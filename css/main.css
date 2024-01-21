@@ -1,0 +1,550 @@
+/* jost-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/jost-v15-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* jost-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/jost-v15-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* jost-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/jost-v15-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* jost-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/jost-v15-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* jost-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/jost-v15-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+  }
+.Rectangle{
+    z-index: 2;
+    position: absolute;
+    top:475px;
+
+}
+  
+.header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px;
+    background: rgba(255, 255, 255, 0.095);
+
+  }
+.header__container{
+    padding-top: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+  }
+.navbar__list{
+    list-style: none;
+    display: inline-flex;
+    padding-right: 2px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 42px;
+  }
+.navbar_link{
+    color: #333136;
+    font-family: "Jost",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+.navbar_link:hover{
+    color: blue;
+  }
+ /* -----------------------------------------------------------------------------------------------hero---------------------------------------------------------------------- */
+.hero{
+
+    padding-top: 100px;
+  }
+.hero__container{
+    z-index: 3;
+    height:640px;
+    position: relative;
+    border-radius: 15px;
+    background: #E7816B;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    max-width: 1200px;
+    margin: 0 auto;
+
+  }
+.hero__image{
+    position: absolute;
+    top: 68px;
+    right: 100px;
+}
+.hero__img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.hero__title{
+    position: absolute;
+    top: 145px;
+    left: 95px;
+    width: 540px;
+    height: 165px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 100% */
+}
+.hero__title:hover{
+    color: black;
+}
+.hero__text{
+    position: absolute;
+    top: 345px;
+    left: 95px;
+    width: 445px; 
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+
+}
+.hero__text:hover{
+    color: #333136;
+}
+.hero__btn{
+    position: absolute;
+    top: 445px;
+    left: 95px;
+    border: none;
+    width: 152px;
+    height: 56px;
+    flex-shrink: 0; 
+    border-radius: 8px;
+    background: #FFF;
+    color: #333136;
+    font-family: "Jost",sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.hero__btn:hover{
+    background: transparent;
+    color: #FFF;
+}
+/* -----------------------------------------------------------------------services----------------------------------------------------------- */
+.services__container{
+    z-index: 4;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+.box{
+    position: relative;
+    width: 585px;
+    height: 645px;
+    background-image: url(../img/Bitmap\ \(6\).png);
+    opacity: 1;
+    border-radius: 10px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.services__item{
+
+    position: relative;
+    background-image: url(../img/Bitmap\ \(4\).png);
+    opacity: 1;
+    width: 585px;
+    height: 310px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.services_item{
+    position: relative;
+    background-image: url(../img/Bitmap\ \(5\).png);
+    opacity: 1;
+    width: 585px;
+    height: 310px;
+    border-radius: 10px;
+}
+.services__list{
+    list-style: none;
+}
+.box__title{
+    position: absolute;
+    top: 250px;
+    left: 160px;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 120% */
+    letter-spacing: 2px;
+}
+.box__title:hover{
+    color: #E7816B;
+}
+.box__text{
+    position: absolute;
+    top: 350px;
+    left: 193px;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.box__text:hover{
+    color: #E7816B;
+}
+.services__title{
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 120% */
+    letter-spacing: 2px;
+}
+.services__title:hover{
+    color: #E7816B;
+}
+.services__text{
+    position: absolute;
+    top: 200px;
+    left: 205px;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.services__text:hover{
+    color: #E7816B;
+}
+
+
+.item__title{
+    position: absolute;
+    top: 100px;
+    left: 130px;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* 120% */
+    letter-spacing: 2px;
+}
+.item__title:hover{
+    color: #E7816B;
+}
+.item__text{
+    position: absolute;
+    top: 200px;
+    left: 205px;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.item__text:hover{
+    color: #E7816B;
+}
+/* --------------------------------------------------------section------------------------------------------------------------------ */
+.section__container{
+    z-index: 5;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.section__item{
+    width: 350px;
+    height: 400px;
+}
+.section__img{
+    margin-left: 70px;
+    padding-top: 20px;
+}
+.section__title{
+    padding-top: 20px;
+    width: 350px;
+    color: #333136;
+    text-align: center;
+    font-family: 'Jost',sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 130% */
+    letter-spacing: 5px;
+}
+.section__title:hover{
+    color: #E7816B;
+}
+.section__text{
+    padding-top: 10px;
+    width: 350px;
+    color: #333136;
+    text-align: center;
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.section__text:hover{
+    color: blue;
+}
+/* -------------------------------------------------main------------------------------ */
+
+.main__wrapper{
+    position: absolute;
+    bottom: 200px;
+    border-radius: 10px;
+    position: relative;
+    max-width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+    background: #E7816B;
+}
+.main__title{
+    position: absolute;
+    top: 72px;
+    left: 95px;
+    width: 298px;
+    height: 98px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px; /* 100% */
+}
+.main__title:hover{
+    color: #333136;
+}
+.main__text{
+    z-index: 9;
+    position: absolute;
+    top: 190px;
+    left: 95px;
+    width: 459px;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 162.5% */
+}
+.main__text:hover{
+    color: #333136;
+}
+.main__btn{
+    z-index: 8;
+    position: absolute;
+    top: 140px;
+    right: 96px;
+    border: none;
+    width: 152px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    background: #FFF;
+    color: #333136;
+    font-family: "Jost",sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.main__btn:hover{
+    background: transparent;
+    color: #FFF;
+}
+.main__img{
+    position: absolute;
+    right: 292px;
+}
+.main__sircle{
+    position: absolute;
+    right: 0px;
+}
+.main__aylana{
+    z-index: 7;
+    position: absolute;
+    bottom: 0px;
+    left: 319px;
+}
+.main__doira{
+    position: absolute;
+    bottom: 0;
+    right: 294px;
+}
+.img{
+    z-index: 6;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* ----------------------------------------------------footer------------------------------------------------------- */
+.footer{
+    background: #333136;
+    height: 413px;
+    width: 1400px;
+    margin: 0 auto;
+
+
+
+}
+.footer__container{
+    z-index: 10;
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.footer__wrapper{
+    position: absolute;
+    top: 193px;
+}
+.footer__box{
+   
+    display: flex;
+    justify-content: space-between;
+}
+.footer__list{
+    list-style: none;
+    display: inline-flex;
+    padding-right: 2px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 42px;
+}
+.footer__link{
+    color: white;
+    font-family: "Jost",sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px; /* 100% */
+    letter-spacing: 2px;
+    text-decoration: none;
+  }
+.footer__link:hover{
+    color: blue;
+  }
+.hr{
+    margin-top: 10px;
+    width: 1200px;
+    height: 1px;
+    flex-shrink: 0;
+    opacity: 0.1;
+    background: #FFF;
+}
+.down__list{
+    position: absolute;
+    top: 263px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__title{
+    width: 350px; 
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1px; /* 162.5% */
+    opacity: 0.5;
+}
+.footer__title:hover{
+    color:#E7816B ;
+}
+.down__link{
+    text-decoration: none;
+    width: 350px;
+    color: #FFF;
+    font-family: "Jost",sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 34px; /* 162.5% */
+    opacity: 0.5;
+}
+.down__link:hover{
+    color: #E7816B;
+}
+.footer__img{
+    margin-top: 80px;
+}
